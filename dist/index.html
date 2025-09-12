@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>АВТОСПЕЦ — Подбор комплектов для ТО и запчастей</title>
+  <meta name="description" content="Подбор комплектов для техобслуживания, масла, фильтры, колодки и автозапчасти на заказ для японских и корейских авто. Доставка и консультации." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#0B0B0C" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CLI output -->
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <style>
+    html,body{font-family: "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;}
+    html{scroll-behavior:smooth;}
+
+    @media (min-width:1024px) and (orientation:portrait){
+    /* Форсируем мобильное в портрете даже на lg */
+    header [data-portrait-mobile="true"] .desktop-nav { display: none !important; }
+    header [data-portrait-mobile="true"] .mobile-toggle,
+    header [data-portrait-mobile="true"] #mobileMenu { display: block !important; }
+    }
+
+
+  </style>
+
+
+
+  <link rel="icon" type="image/png" href="/src/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/src/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/src/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/src/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="АВТОСПЕЦ" />
+  <link rel="manifest" href="/src/favicon/site.webmanifest" />
+
+
+</head>
+<body class="bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 selection:bg-orange-200/60 selection:text-zinc-900 dark:selection:bg-orange-400/25">
+    <!-- ===== Header ===== -->
+<header class="sticky top-0 z-50 border-b border-zinc-200/60 bg-white dark:bg-zinc-950 dark:border-zinc-800">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-20 items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="inline-flex items-center gap-3">
+        <img src="/src/img/logostdpngfter.png" alt="АВТОСПЕЦ" class="h-28 w-auto object-contain" />
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden items-center gap-8 lg:flex">
+        <a href="#to" class="text-base font-medium text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-white">ТО и расходники</a>
+        <a href="#parts" class="text-base font-medium text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-white">Автозапчасти</a>
+        <a href="#contacts" class="text-base font-medium text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-white">Контакты</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="https://t.me/Yury_Kush" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-xl border border-orange-500/20 bg-orange-500/10 px-4 py-2 text-sm font-semibold text-orange-700 hover:bg-orange-500/15 active:scale-[.98] dark:text-orange-300 dark:border-orange-400/20 dark:bg-orange-400/10">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              aria-hidden="true" class="size-6" fill="currentColor">
+            <path d="M9.036 15.47 8.86 19.2c.308 0 .441-.132.6-.29l1.44-1.385 2.99 2.19c.548.301.94.143 1.091-.506l1.976-9.282c.2-.904-.346-1.258-.916-1.037L4.5 11.09c-.882.343-.869.836-.15 1.058l3.61 1.126 8.377-5.29c.394-.24.753-.107.458.133z"/>
+          </svg>
+          Telegram
+        </a>
+        <a href="https://max.ru/u/f9LHodD0cOLy7wEqI7nGzGo-RbPZGVQ-filFrne1ElJ63ltoTDAWqoZP06M" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-xl border border-orange-500/20 bg-orange-500/10 px-4 py-2 text-sm font-semibold text-orange-700 hover:bg-orange-500/15 active:scale-[.98] dark:text-orange-300 dark:border-orange-400/20 dark:bg-orange-400/10">
+          <svg class="size-6" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true">
+            <path d="M512 85.3c-235.3 0-426.7 178.4-426.7 397.4 0 112.8 54.1 213.6 138.7 283.6l-17.6 144c-2.7 21.8 18.7 38.1 38.7 28.1l191.2-95.3c23.5 3.2 47.7 4.9 72.1 4.9 235.3 0 426.7-178.4 426.7-397.4S747.3 85.3 512 85.3zM512 640c-106 0-192-71.6-192-160s86-160 192-160 192 71.6 192 160-86 160-192 160z"/>
+          </svg>
+          MAX
+        </a>
+
+
+        <!-- Телефон
+        <a href="tel:+7XXXXXXXXXX" class="hidden lg:inline text-base font-semibold text-zinc-800 hover:text-zinc-950 dark:text-zinc-200 dark:hover:text-white">+7 (XXX) XXX-XX-XX</a>
+        -->
+      </div>
+
+      <!-- Mobile menu button (animated burger) -->
+      <!-- Mobile menu toggle (wrapper = state holder) -->
+<div id="menuToggle" data-open="false" class="lg:hidden group/menu relative">
+  <button id="menuBtn"
+          aria-expanded="false"
+          class="relative inline-flex h-11 w-11 items-center justify-center rounded-xl border border-zinc-200 bg-white text-zinc-700 shadow-sm hover:bg-zinc-50
+                 dark:bg-zinc-900 dark:border-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-800
+                 transition-colors duration-300 ease-out"
+          aria-label="Меню">
+    <!-- 3 lines -->
+    <span class="absolute block h-0.5 w-6 -translate-y-2 rounded bg-current
+                 transition-transform duration-300 ease-in-out will-change-transform
+                 group-data-[open=true]/menu:translate-y-0 group-data-[open=true]/menu:rotate-45"></span>
+
+    <span class="absolute block h-0.5 w-6 rounded bg-current
+                 transition-all duration-300 ease-in-out will-change-transform
+                 group-data-[open=true]/menu:opacity-0 group-data-[open=true]/menu:scale-x-0"></span>
+
+    <span class="absolute block h-0.5 w-6 translate-y-2 rounded bg-current
+                 transition-transform duration-300 ease-in-out will-change-transform
+                 group-data-[open=true]/menu:translate-y-0 group-data-[open=true]/menu:-rotate-45"></span>
+
+    <!-- subtle ring on open -->
+    <span class="absolute inset-0 rounded-xl ring-0 ring-orange-500/0 transition-[box-shadow,transform] duration-300 ease-out active:scale-95
+                 group-data-[open=true]/menu:ring-4 group-data-[open=true]/menu:ring-orange-500/10"></span>
+  </button>
+</div>
+
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <nav id="mobileMenu" class="lg:hidden hidden border-t border-zinc-200/70 bg-white dark:bg-zinc-950 dark:border-zinc-800">
+    <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6">
+      <!-- одинаковые hover/тени у всех -->
+      <a href="#to" class="block rounded-lg px-2 py-2 text-base font-medium text-zinc-700 hover:bg-zinc-100 hover:shadow-sm dark:text-zinc-300 dark:hover:bg-zinc-900">ТО и расходники</a>
+      <a href="#parts" class="block rounded-lg px-2 py-2 text-base font-medium text-zinc-700 hover:bg-zinc-100 hover:shadow-sm dark:text-zinc-300 dark:hover:bg-zinc-900">Автозапчасти</a>
+      <a href="#contacts" class="block rounded-lg px-2 py-2 text-base font-medium text-zinc-700 hover:bg-zinc-100 hover:shadow-sm dark:text-zinc-300 dark:hover:bg-zinc-900">Контакты</a>
+      <div class="mt-3 flex gap-2">
+        <a href="https://t.me/Yury_Kush" target="_blank" rel="noopener" class="flex-1 rounded-xl border border-orange-500/20 bg-orange-500/10 px-3 py-2 text-center text-sm font-semibold text-orange-700 hover:bg-orange-500/15 dark:text-orange-300 dark:border-orange-400/20 dark:bg-orange-400/10">Telegram</a>
+        <a href="https://max.ru/u/f9LHodD0cOLy7wEqI7nGzGo-RbPZGVQ-filFrne1ElJ63ltoTDAWqoZP06M" target="_blank" rel="noopener" class="flex-1 rounded-xl border border-orange-500/20 bg-orange-500/10 px-3 py-2 text-center text-sm font-semibold text-orange-700 hover:bg-orange-500/15 dark:text-orange-300 dark:border-orange-400/20 dark:bg-orange-400/10">MAX</a>
+        <!-- Телефон если нужен (мобильная строка)
+        <a href="tel:+7XXXXXXXXXX" class="flex-1 rounded-xl border border-zinc-200 bg-white px-3 py-2 text-center text-sm font-semibold text-zinc-800 hover:bg-zinc-50 dark:bg-zinc-900 dark:border-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-800">Позвонить</a>
+        -->
+
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<!-- ===== Pre-Hero Telegram Button (minimal, full-width clickable) ===== -->
+<a id="preHeroBar"
+   href="https://t.me/autospets88"
+   target="_blank" rel="noopener"
+   aria-label="Подписаться на Telegram-канал АВТОСПЕЦ (@autospets88)"
+   class="relative z-10 block w-full select-none
+          border-y border-zinc-200 bg-zinc-200 text-zinc-800
+          transition-colors duration-200
+          hover:bg-zinc-300
+          focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400/50
+          dark:border-zinc-800 dark:bg-zinc-800 dark:text-zinc-100
+          dark:hover:bg-zinc-700 dark:focus-visible:ring-zinc-600/50">
+  <div class="mx-auto max-w-screen-xl px-4">
+    <div class="flex h-10 items-center justify-center">
+      <span class="text-[13px] sm:text-sm tracking-wide">
+        Подпишитесь на Telegram-канал <span class="font-medium">@autospets88</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+
+
+<!-- ===== Promo / Рекламный герой с каруселью ===== -->
+<section id="promo" class="relative isolate select-none"
+         data-interval="6000"
+         style="--hero-dim:.75; --hero-offset:80px;">
+  <div id="promoViewport" class="relative overflow-hidden">
+    <!-- Трек со слайдами -->
+    <div id="promoTrack"
+         class="flex h-[calc(100svh-var(--hero-offset))] md:h-[min(80vh,760px)] touch-pan-y will-change-transform transition-transform duration-500 ease-in-out">
+      
+      <!-- Slide 1 -->
+      <figure class="relative w-full shrink-0">
+        <img src="/src/img/main-theme.jpg" alt="АВТОСПЕЦ"
+             class="absolute inset-0 h-full w-full object-cover" loading="eager" />
+        <!-- Фикс затемнения: bg-black + opacity через CSS-переменную -->
+        <div class="absolute inset-0 bg-black" style="opacity: var(--hero-dim, .75);"></div>
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        <figcaption class="absolute inset-0 grid place-items-center p-4">
+          <p class="max-w-3xl text-center text-white/95 text-2xl sm:text-3xl md:text-4xl font-semibold drop-shadow-[0_1px_2px_rgba(0,0,0,.6)]">
+            Подберём комплект ТО для вашего авто — быстро и по честной цене
+          </p>
+        </figcaption>
+      </figure>
+
+      <!-- Slide 2 -->
+      <figure class="relative w-full shrink-0">
+        <img src="/src/img/second-theme.jpg" alt="АВТОСПЕЦ"
+             class="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+        <div class="absolute inset-0 bg-black" style="opacity: var(--hero-dim, .75);"></div>
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        <figcaption class="absolute inset-0 grid place-items-center p-4">
+          <p class="max-w-3xl text-center text-white/95 text-2xl sm:text-3xl md:text-4xl font-semibold drop-shadow-[0_1px_2px_rgba(0,0,0,.6)]">
+            Оригинал и проверенные аналоги — несколько вариантов под бюджет
+          </p>
+        </figcaption>
+      </figure>
+
+      <!-- Slide 3 -->
+      <figure class="relative w-full shrink-0">
+        <img src="/src/img/third-theme.jpg" alt="АВТОСПЕЦ"
+             class="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+        <div class="absolute inset-0 bg-black" style="opacity: var(--hero-dim, .75);"></div>
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        <figcaption class="absolute inset-0 grid place-items-center p-4">
+          <p class="max-w-3xl text-center text-white/95 text-2xl sm:text-3xl md:text-4xl font-semibold drop-shadow-[0_1px_2px_rgba(0,0,0,.6)]">
+            Подбираем с учётом модели,<br> года выпуска и пробега
+          </p>
+        </figcaption>
+      </figure>
+
+      <!-- Slide 4 -->
+      <figure class="relative w-full shrink-0">
+        <img src="/src/img/hero-theme.jpg" alt="АВТОСПЕЦ"
+             class="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+        <div class="absolute inset-0 bg-black" style="opacity: var(--hero-dim, .75);"></div>
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        <figcaption class="absolute inset-0 grid place-items-center p-4">
+          <p class="max-w-3xl text-center text-white/95 text-2xl sm:text-3xl md:text-4xl font-semibold drop-shadow-[0_1px_2px_rgba(0,0,0,.6)]">
+            Качественные масла и фильтры продлевают ресурс двигателя до 30%
+          </p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- Точки-индикаторы -->
+    <div id="promoDots"
+         class="pointer-events-auto absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/25 backdrop-blur-md">
+    </div>
+
+    <!-- Кнопки-навигации (десктоп) -->
+    <div class="pointer-events-none absolute inset-0 hidden lg:flex items-center justify-between px-3">
+      <button data-dir="prev"
+              class="pointer-events-auto inline-flex h-11 w-11 items-center justify-center rounded-full bg-black/30 hover:bg-black/40 backdrop-blur-md text-white"
+              aria-label="Предыдущий слайд">‹</button>
+      <button data-dir="next"
+              class="pointer-events-auto inline-flex h-11 w-11 items-center justify-center rounded-full bg-black/30 hover:bg-black/40 backdrop-blur-md text-white"
+              aria-label="Следующий слайд">›</button>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <main>
+    <!-- ===== Hero / ТО ===== -->
+    <section id="to" class="relative overflow-clip scroll-mt-20">
+      <!-- subtle gradient blob -->
+      <div aria-hidden="true" class="pointer-events-none absolute inset-x-0 -top-32 h-72 bg-gradient-to-b from-orange-400/10 to-transparent blur-2xl dark:from-orange-400/15"></div>
+
+      <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-16">
+        <div class="grid items-center gap-8 lg:grid-cols-2">
+          <div>
+            <span class="inline-flex items-center gap-2 rounded-full border border-orange-500/20 bg-orange-500/10 px-3 py-1 text-xs font-semibold tracking-wide text-orange-700 dark:text-orange-300">
+              <span class="relative inline-block size-1.5 rounded-full bg-orange-500/80"></span>
+              Всё для техобслуживания 
+            </span>
+            <h1 class="mt-4 text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
+              Подбор комплектов ТО для японских и корейских автомобилей
+            </h1>
+            <p class="mt-4 max-w-prose text-base/7 text-zinc-600 dark:text-zinc-300">
+              Масла, фильтры, свечи и другие расходники.<br>
+              Соберём комплект под VIN или номеру кузова.<br>
+              Быстро, надёжно и по честным ценам.
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href="#contacts" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-xl bg-zinc-900 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-zinc-800 active:scale-[.99] dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    aria-hidden="true" class="size-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- корзина -->
+                  <path d="M3 6h18l-2 12H5L3 6z"/>
+                  <!-- ручка корзины -->
+                  <path d="M9 6l2-3h2l2 3"/>
+                  <!-- галочка заказа -->
+                  <path d="M9 12l2 2 4-4"/>
+                </svg>
+                Подобрать комплект
+              </a>
+              <!-- 
+              <a href="tel:+7XXXXXXXXXX" class="inline-flex items-center gap-2 rounded-xl border border-zinc-200 bg-white px-4 py-2.5 text-sm font-semibold text-zinc-900 hover:bg-zinc-50 dark:bg-zinc-900 dark:border-zinc-800 dark:text-zinc-100 dark:hover:bg-zinc-800">
+                <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.78 19.78 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.78 19.78 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.37 1.77.73 2.58a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.5-1.25a2 2 0 0 1 2.11-.45c.81.36 1.68.61 2.58.73A2 2 0 0 1 22 16.92z"/></svg>
+                Позвонить
+              </a>
+              -->
+            </div>
+
+            <ul class="mt-6 flex flex-wrap gap-2 text-xs font-medium text-zinc-600 dark:text-zinc-300">
+              <li class="rounded-full border border-zinc-200 px-3 py-1 dark:border-zinc-800">Оригинальные масла</li>
+              <li class="rounded-full border border-zinc-200 px-3 py-1 dark:border-zinc-800">Фильтры: масляный/воздушный/салонный</li>
+              <li class="rounded-full border border-zinc-200 px-3 py-1 dark:border-zinc-800">Тормозные колодки/диски</li>
+              <li class="rounded-full border border-zinc-200 px-3 py-1 dark:border-zinc-800">Свечи зажигания</li>
+            </ul>
+          </div>
+
+          <!-- ===== Visual block (exact 1:1 fit into aspect box, consistent paddings) ===== -->
+<div class="relative">
+  <div class="mx-auto w-full max-w-xl overflow-hidden rounded-3xl border border-zinc-200 bg-gradient-to-br from-zinc-100 to-zinc-50 shadow-sm dark:border-zinc-800 dark:from-zinc-900 dark:to-zinc-950">
+    <div class="grid h-full grid-cols-2 gap-3 p-4 sm:p-6">
+
+      <!-- Масла -->
+      <article class="group rounded-2xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-950">
+        <p class="text-sm font-semibold">Масла</p>
+        <!-- Рамка с ЕДИНЫМИ отступами от article -->
+        <figure class="mt-2 rounded-xl border border-zinc-200/70 dark:border-zinc-800">
+          <div class="relative aspect-[3/2] w-full overflow-hidden rounded-[calc(theme(borderRadius.xl)-2px)] bg-zinc-50 dark:bg-zinc-900">
+            <img
+              src="/src/img/pictures/oil.png"
+              alt="Масла"
+              class="absolute inset-0 block h-full w-full object-contain"
+              width="600" height="400" loading="lazy" decoding="async" />
+          </div>
+        </figure>
+      </article>
+
+      <!-- Фильтры -->
+      <article class="group rounded-2xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-950">
+        <p class="text-sm font-semibold">Фильтры</p>
+        <figure class="mt-2 rounded-xl border border-zinc-200/70 dark:border-zinc-800">
+          <div class="relative aspect-[3/2] w-full overflow-hidden rounded-[calc(theme(borderRadius.xl)-2px)] bg-zinc-50 dark:bg-zinc-900">
+            <img
+              src="/src/img/pictures/2filters.png"
+              alt="Фильтры"
+              class="absolute inset-0 block h-full w-full object-contain"
+              width="600" height="400" loading="lazy" decoding="async" />
+          </div>
+        </figure>
+      </article>
+
+      <!-- Тормоза -->
+      <article class="group rounded-2xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-950">
+        <p class="text-sm font-semibold">Тормозные элементы</p>
+        <figure class="mt-2 rounded-xl border border-zinc-200/70 dark:border-zinc-800">
+          <div class="relative aspect-[3/2] w-full overflow-hidden rounded-[calc(theme(borderRadius.xl)-2px)] bg-zinc-50 dark:bg-zinc-900">
+            <img
+              src="/src/img/pictures/brakes.jpg"
+              alt="Тормозные элементы"
+              class="absolute inset-0 block h-full w-full object-contain"
+              width="600" height="400" loading="lazy" decoding="async" />
+          </div>
+        </figure>
+      </article>
+
+      <!-- Технические жидкости -->
+      <article class="group rounded-2xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-950">
+        <p class="text-sm font-semibold">Технические жидкости</p>
+        <figure class="mt-2 rounded-xl border border-zinc-200/70 dark:border-zinc-800">
+          <div class="relative aspect-[3/2] w-full overflow-hidden rounded-[calc(theme(borderRadius.xl)-2px)] bg-zinc-50 dark:bg-zinc-900">
+            <img
+              src="/src/img/pictures/red_liquid.png"
+              alt="Тормозные элементы"
+              class="absolute inset-0 block h-full w-full object-contain"
+              width="600" height="400" loading="lazy" decoding="async" />
+          </div>
+        </figure>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- Tags 
+  <div class="flex flex-row gap-4 mt-2">
+      <div class="pointer-events-none rotate-3 rounded-2xl border border-orange-500/20 bg-orange-500/10 px-3 py-1 text-xs font-semibold text-orange-700 shadow-sm dark:text-orange-300 dark:border-orange-400/20 dark:bg-orange-400/10">
+        Быстрый подбор
+      </div>
+      <div class="pointer-events-none -rotate-3 rounded-2xl border border-orange-500/20 bg-orange-500/10 px-3 py-1 text-xs font-semibold text-orange-700 shadow-sm dark:text-orange-300 dark:border-orange-400/20 dark:bg-orange-400/10">
+        Консультация эксперта
+      </div>
+      <div class="pointer-events-none rotate-3 rounded-2xl border border-orange-500/20 bg-orange-500/10 px-3 py-1 text-xs font-semibold text-orange-700 shadow-sm dark:text-orange-300 dark:border-orange-400/20 dark:bg-orange-400/10">
+        Япония и Корея
+      </div>
+  </div>
+  -->
+</div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Автозапчасти на заказ ===== -->
+    <section id="parts" class="relative border-t border-zinc-200/70 py-10 dark:border-zinc-800 lg:py-16 scroll-mt-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <span class="inline-flex items-center gap-2 rounded-full border border-orange-500/20 bg-orange-500/10 px-3 py-1 text-xs font-semibold tracking-wide text-orange-700 dark:text-orange-300 mb-4">
+              <span class="relative inline-block size-1.5 rounded-full bg-orange-500/80"></span>
+              Япония 🇯🇵 и Южная Корея 🇰🇷
+            </span>
+        <div class="mb-8 flex items-end justify-between gap-4">
+          <div>
+            <h2 class="text-2xl font-extrabold tracking-tight sm:text-3xl">Автозапчасти на заказ</h2>
+            <p class="mt-2 max-w-prose text-sm/6 text-zinc-600 dark:text-zinc-300">
+              Оригинал и качественные аналоги.
+            </p>
+          </div>
+          <a href="#contacts" target="_blank" rel="noopener" class="hidden shrink-0 items-center gap-2 rounded-xl border border-orange-500/20 bg-orange-500/10 px-3 py-2 text-sm font-semibold text-orange-700 hover:bg-orange-500/15 md:inline-flex dark:text-orange-300 dark:border-orange-400/20 dark:bg-orange-400/10">
+            Запросить подбор
+          </a>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Card -->
+          <article class="group rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm transition hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950">
+            <div class="flex items-center justify-between">
+              <h3 class="text-base font-semibold">Оригинальные детали</h3>
+              <span class="rounded-full bg-orange-500/10 px-2 py-0.5 text-xs font-semibold text-orange-700 dark:text-orange-300">🚘</span>
+            </div>
+            <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">Поиск по VIN или номеру кузова, огромный каталог автозапчастей.</p>
+          </article>
+
+          <article class="group rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm transition hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950">
+            <div class="flex items-center justify-between">
+              <h3 class="text-base font-semibold">Контрактные узлы</h3>
+              <span class="rounded-full bg-orange-500/10 px-2 py-0.5 text-xs font-semibold text-orange-700 dark:text-orange-300">🛠️</span>
+            </div>
+            <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">Подбор контрактных элементов под заказ.</p>
+          </article>
+
+          <article class="group rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm transition hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950">
+            <div class="flex items-center justify-between">
+              <h3 class="text-base font-semibold">Проверенные аналоги</h3>
+              <span class="rounded-full bg-orange-500/10 px-2 py-0.5 text-xs font-semibold text-orange-700 dark:text-orange-300">⚙️</span>
+            </div>
+            <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">Только надёжные бренды. Предложим 2–3 варианта на выбор по бюджету.</p>
+          </article>
+
+          <article class="group rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm transition hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950">
+            <div class="flex items-center justify-between">
+              <h3 class="text-base font-semibold">Консультация эксперта</h3>
+              <span class="rounded-full bg-orange-500/10 px-2 py-0.5 text-xs font-semibold text-orange-700 dark:text-orange-300">👨‍🔧</span>
+            </div>
+            <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">Подскажем лучший вариант и сразу рассчитаем цену.</p>
+          </article>
+        </div>
+
+        <div class="mt-6 md:hidden">
+          <a href="#contacts" target="_blank" rel="noopener" class="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-orange-500/20 bg-orange-500/10 px-4 py-2.5 text-sm font-semibold text-orange-700 hover:bg-orange-500/15 dark:text-orange-300 dark:border-orange-400/20 dark:bg-orange-400/10">
+            Запросить подбор
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+
+<!-- ===== Автомобили, с которыми мы работаем ===== -->
+<section id="cars" class="relative border-t border-zinc-200/70 py-12 dark:border-zinc-800 lg:py-16 scroll-mt-20">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+    <!-- Заголовок -->
+    <div class="text-center">
+      <h2 class="text-2xl font-extrabold tracking-tight sm:text-3xl">
+        С какими автомобилями мы работаем
+      </h2>
+      <!--
+      <p class="mt-2 text-sm/6 text-zinc-600 dark:text-zinc-300">
+        Япония — правый и левый руль <br> Южная Корея, актуальные и классические модели.
+      </p>
+      -->
+    </div>
+
+    <!-- Карточки (центрированные на планшете/десктопе) -->
+    <div class="mt-8 mx-auto w-full max-w-4xl">
+      <div class="grid gap-6 sm:grid-cols-2">
+        <!-- Японские -->
+        <article class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold">Японские автомобили</h3>
+            <span class="rounded-full bg-orange-500/10 px-2 py-0.5 text-xs font-semibold text-orange-700 dark:text-orange-300">🇯🇵</span>
+          </div>
+
+          <ul class="mt-3 space-y-1.5 text-sm text-zinc-600 dark:text-zinc-300">
+            <li>Toyota, Honda, Nissan, Mazda</li>
+            <li>Subaru, Mitsubishi, Suzuki, Lexus</li>
+          </ul>
+
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <span class="rounded-full border border-zinc-200 px-2.5 py-1 dark:border-zinc-800">Гибриды</span>
+            <span class="rounded-full border border-zinc-200 px-2.5 py-1 dark:border-zinc-800">Электромобили</span>
+          </div>
+        </article>
+
+        <!-- Корейские -->
+        <article class="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold">Корейские автомобили</h3>
+            <span class="rounded-full bg-orange-500/10 px-2 py-0.5 text-xs font-semibold text-orange-700 dark:text-orange-300">🇰🇷</span>
+          </div>
+
+          <ul class="mt-3 space-y-1.5 text-sm text-zinc-600 dark:text-zinc-300">
+            <li>Hyundai, Kia, Genesis</li>
+            <li>Renault Samsung, SsangYong</li>
+          </ul>
+
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <span class="rounded-full border border-zinc-200 px-2.5 py-1 dark:border-zinc-800">DCT / AT</span>
+            <span class="rounded-full border border-zinc-200 px-2.5 py-1 dark:border-zinc-800">Турбо</span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Низ блока — маленькие плашки -->
+    <div class="mt-6 flex flex-wrap items-center justify-center gap-3 text-xs font-semibold">
+      <span class="pointer-events-none rotate-1 rounded-2xl border border-orange-500/20 bg-orange-500/10 px-3 py-1 text-orange-700 shadow-sm dark:text-orange-300 dark:border-orange-400/20 dark:bg-orange-400/10">
+        Правый руль
+      </span>
+      <span class="pointer-events-none -rotate-1 rounded-2xl border border-orange-500/20 bg-orange-500/10 px-3 py-1 text-orange-700 shadow-sm dark:text-orange-300 dark:border-orange-400/20 dark:bg-orange-400/10">
+        Левый руль
+      </span>
+      <span class="pointer-events-none rotate-1 rounded-2xl border border-orange-500/20 bg-orange-500/10 px-3 py-1 text-orange-700 shadow-sm dark:text-orange-300 dark:border-orange-400/20 dark:bg-orange-400/10">
+        Япония 🇯🇵 и Корея 🇰🇷
+      </span>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+  <!-- ===== Моторные масла (бренды + аннотации) ===== -->
+<section id="oil-brands" class="relative border-t border-zinc-200/70 py-8 dark:border-zinc-800">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mb-4 flex items-center justify-between">
+      <h2 class="text-xl font-extrabold tracking-tight sm:text-2xl">Популярные бренды моторных масел</h2>
+      <span class="text-xs text-zinc-500 dark:text-zinc-400">Нажмите на бренд, чтобы узнать больше</span>
+    </div>
+
+    <div class="relative">
+      <!-- Лента брендов -->
+      <div id="oilRail"
+           class="flex snap-x snap-mandatory gap-3 overflow-x-auto pb-2
+                  [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+        <!-- Chip template:
+             class="oil-chip" data-popover="#pop-<id>" -->
+        <button class="oil-chip snap-start whitespace-nowrap rounded-2xl border border-zinc-200 bg-white px-3 py-2 text-sm font-semibold shadow-sm
+         hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-800
+         transition-colors duration-200
+         data-[active=true]:bg-zinc-100 data-[active=true]:border-zinc-300
+         dark:data-[active=true]:bg-zinc-800 dark:data-[active=true]:border-zinc-700
+         data-[active=true]:ring-4 data-[active=true]:ring-orange-500/10"
+                data-popover="#pop-soil"
+                aria-selected="false"
+                type="button">
+          <span class="mr-2 inline-flex size-6 items-center justify-center rounded-full bg-orange-500/10 text-orange-700 dark:text-orange-300">S</span>S-Oil
+        </button>
+
+        <button class="oil-chip snap-start whitespace-nowrap rounded-2xl border border-zinc-200 bg-white px-3 py-2 text-sm font-semibold shadow-sm
+         hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-800
+         transition-colors duration-200
+         data-[active=true]:bg-zinc-100 data-[active=true]:border-zinc-300
+         dark:data-[active=true]:bg-zinc-800 dark:data-[active=true]:border-zinc-700
+         data-[active=true]:ring-4 data-[active=true]:ring-orange-500/10"
+                data-popover="#pop-takayama"
+                aria-selected="false"
+                type="button">
+          <span class="mr-2 inline-flex size-6 items-center justify-center rounded-full bg-orange-500/10 text-orange-700 dark:text-orange-300">T</span>Takayama
+        </button>
+
+        <button class="oil-chip snap-start whitespace-nowrap rounded-2xl border border-zinc-200 bg-white px-3 py-2 text-sm font-semibold shadow-sm
+         hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-800
+         transition-colors duration-200
+         data-[active=true]:bg-zinc-100 data-[active=true]:border-zinc-300
+         dark:data-[active=true]:bg-zinc-800 dark:data-[active=true]:border-zinc-700
+         data-[active=true]:ring-4 data-[active=true]:ring-orange-500/10"
+                data-popover="#pop-eneos"
+                aria-selected="false"
+                type="button">
+          <span class="mr-2 inline-flex size-6 items-center justify-center rounded-full bg-orange-500/10 text-orange-700 dark:text-orange-300">E</span>ENEOS
+        </button>
+
+        <button class="oil-chip snap-start whitespace-nowrap rounded-2xl border border-zinc-200 bg-white px-3 py-2 text-sm font-semibold shadow-sm
+         hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-800
+         transition-colors duration-200
+         data-[active=true]:bg-zinc-100 data-[active=true]:border-zinc-300
+         dark:data-[active=true]:bg-zinc-800 dark:data-[active=true]:border-zinc-700
+         data-[active=true]:ring-4 data-[active=true]:ring-orange-500/10"
+                data-popover="#pop-tcl"
+                aria-selected="false"
+                type="button">
+          <span class="mr-2 inline-flex size-6 items-center justify-center rounded-full bg-orange-500/10 text-orange-700 dark:text-orange-300">T</span>TCL
+        </button>
+
+        <button class="oil-chip snap-start whitespace-nowrap rounded-2xl border border-zinc-200 bg-white px-3 py-2 text-sm font-semibold shadow-sm
+         hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-800
+         transition-colors duration-200
+         data-[active=true]:bg-zinc-100 data-[active=true]:border-zinc-300
+         dark:data-[active=true]:bg-zinc-800 dark:data-[active=true]:border-zinc-700
+         data-[active=true]:ring-4 data-[active=true]:ring-orange-500/10"
+                data-popover="#pop-alphas"
+                aria-selected="false"
+                type="button">
+          <span class="mr-2 inline-flex size-6 items-center justify-center rounded-full bg-orange-500/10 text-orange-700 dark:text-orange-300">A</span>Alpha's
+        </button>
+
+        <button class="oil-chip snap-start whitespace-nowrap rounded-2xl border border-zinc-200 bg-white px-3 py-2 text-sm font-semibold shadow-sm
+         hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-800
+         transition-colors duration-200
+         data-[active=true]:bg-zinc-100 data-[active=true]:border-zinc-300
+         dark:data-[active=true]:bg-zinc-800 dark:data-[active=true]:border-zinc-700
+         data-[active=true]:ring-4 data-[active=true]:ring-orange-500/10"
+                data-popover="#pop-idemitsu"
+                aria-selected="false"
+                type="button">
+          <span class="mr-2 inline-flex size-6 items-center justify-center rounded-full bg-orange-500/10 text-orange-700 dark:text-orange-300">I</span>Idemitsu
+        </button>
+
+        <button class="oil-chip snap-start whitespace-nowrap rounded-2xl border border-zinc-200 bg-white px-3 py-2 text-sm font-semibold shadow-sm
+         hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-800
+         transition-colors duration-200
+         data-[active=true]:bg-zinc-100 data-[active=true]:border-zinc-300
+         dark:data-[active=true]:bg-zinc-800 dark:data-[active=true]:border-zinc-700
+         data-[active=true]:ring-4 data-[active=true]:ring-orange-500/10"
+                data-popover="#pop-toyota-oil"
+                aria-selected="false"
+                type="button">
+          <span class="mr-2 inline-flex size-6 items-center justify-center rounded-full bg-orange-500/10 text-orange-700 dark:text-orange-300">T</span>Toyota
+        </button>
+
+        <button class="oil-chip snap-start whitespace-nowrap rounded-2xl border border-zinc-200 bg-white px-3 py-2 text-sm font-semibold shadow-sm
+         hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-800
+         transition-colors duration-200
+         data-[active=true]:bg-zinc-100 data-[active=true]:border-zinc-300
+         dark:data-[active=true]:bg-zinc-800 dark:data-[active=true]:border-zinc-700
+         data-[active=true]:ring-4 data-[active=true]:ring-orange-500/10"
+                data-popover="#pop-honda-oil"
+                aria-selected="false"
+                type="button">
+          <span class="mr-2 inline-flex size-6 items-center justify-center rounded-full bg-orange-500/10 text-orange-700 dark:text-orange-300">H</span>Honda
+        </button>
+      </div>
+
+      <!-- Поповеры -->
+      <div id="pop-soil" class="oil-popover hidden absolute left-0 right-0 z-20 mx-4 mt-2 rounded-2xl border border-zinc-200 bg-white p-4 shadow-lg dark:border-zinc-800 dark:bg-zinc-950">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-base font-semibold">S-Oil</h3>
+            <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Премиальные базовые масла (Group III/III+) и линейки для азиатских допусков. Хороший баланс цены и ресурса.</p>
+            <a href="https://t.me/your_telegram" target="_blank" rel="noopener" class="mt-3 inline-flex rounded-xl bg-zinc-900 px-3 py-1.5 text-xs font-semibold text-white hover:bg-zinc-800 dark:bg-white dark:text-zinc-900">Подобрать вязкость</a>
+          </div>
+          <button class="oil-close rounded-lg p-1 text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-900" aria-label="Закрыть">✕</button>
+        </div>
+      </div>
+
+      <div id="pop-takayama" class="oil-popover hidden absolute left-0 right-0 z-20 mx-4 mt-2 rounded-2xl border border-zinc-200 bg-white p-4 shadow-lg dark:border-zinc-800 dark:bg-zinc-950">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-base font-semibold">Takayama</h3>
+            <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Линейки для японских двигателей, стабильная вязкость, чистота и низкий расход на угар.</p>
+            <a href="https://t.me/your_telegram" target="_blank" rel="noopener" class="mt-3 inline-flex rounded-xl bg-zinc-900 px-3 py-1.5 text-xs font-semibold text-white hover:bg-zinc-800 dark:bg-white dark:text-zinc-900">Рекомендация под VIN</a>
+          </div>
+          <button class="oil-close rounded-lg p-1 text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-900" aria-label="Закрыть">✕</button>
+        </div>
+      </div>
+
+      <div id="pop-eneos" class="oil-popover hidden absolute left-0 right-0 z-20 mx-4 mt-2 rounded-2xl border border-zinc-200 bg-white p-4 shadow-lg dark:border-zinc-800 dark:bg-zinc-950">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-base font-semibold">ENEOS</h3>
+            <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">OEM-поставщик для японских марок. Совместимость с требованиями JASO/ILSAC, отличная моющая способность.</p>
+            <a href="https://t.me/your_telegram" target="_blank" rel="noopener" class="mt-3 inline-flex rounded-xl bg-zinc-900 px-3 py-1.5 text-xs font-semibold text-white hover:bg-zinc-800 dark:bg-white dark:text-zinc-900">Подобрать ENEOS</a>
+          </div>
+          <button class="oil-close rounded-lg p-1 text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-900" aria-label="Закрыть">✕</button>
+        </div>
+      </div>
+
+      <div id="pop-tcl" class="oil-popover hidden absolute left-0 right-0 z-20 mx-4 mt-2 rounded-2xl border border-zinc-200 bg-white p-4 shadow-lg dark:border-zinc-800 dark:bg-zinc-950">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-base font-semibold">TCL</h3>
+            <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Известны жидкостями и маслами для азиатских авто. Подберём под климат и пробег.</p>
+            <a href="https://t.me/your_telegram" target="_blank" rel="noopener" class="mt-3 inline-flex rounded-xl bg-zinc-900 px-3 py-1.5 text-xs font-semibold text-white hover:bg-zinc-800 dark:bg-white dark:text-zinc-900">Спросить про TCL</a>
+          </div>
+          <button class="oil-close rounded-lg p-1 text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-900" aria-label="Закрыть">✕</button>
+        </div>
+      </div>
+
+      <div id="pop-alphas" class="oil-popover hidden absolute left-0 right-0 z-20 mx-4 mt-2 rounded-2xl border border-zinc-200 bg-white p-4 shadow-lg dark:border-zinc-800 dark:bg-zinc-950">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-base font-semibold">Alpha's</h3>
+            <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Поддержка современных допусков и экономия топлива. Хороший выбор для городского цикла.</p>
+            <a href="https://t.me/your_telegram" target="_blank" rel="noopener" class="mt-3 inline-flex rounded-xl bg-zinc-900 px-3 py-1.5 text-xs font-semibold text-white hover:bg-zinc-800 dark:bg-white dark:text-zinc-900">Подобрать Alpha's</a>
+          </div>
+          <button class="oil-close rounded-lg p-1 text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-900" aria-label="Закрыть">✕</button>
+        </div>
+      </div>
+
+      <div id="pop-idemitsu" class="oil-popover hidden absolute left-0 right-0 z-20 mx-4 mt-2 rounded-2xl border border-zinc-200 bg-white p-4 shadow-lg dark:border-zinc-800 dark:bg-zinc-950">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-base font-semibold">Idemitsu</h3>
+            <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Один из крупнейших японских производителей масел; стабильность и совместимость с JDM-двигателями.</p>
+            <a href="https://t.me/your_telegram" target="_blank" rel="noopener" class="mt-3 inline-flex rounded-xl bg-zinc-900 px-3 py-1.5 text-xs font-semibold text-white hover:bg-zinc-800 dark:bg-white dark:text-zinc-900">Idemitsu под ваш VIN</a>
+          </div>
+          <button class="oil-close rounded-lg p-1 text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-900" aria-label="Закрыть">✕</button>
+        </div>
+      </div>
+
+      <div id="pop-toyota-oil" class="oil-popover hidden absolute left-0 right-0 z-20 mx-4 mt-2 rounded-2xl border border-zinc-200 bg-white p-4 shadow-lg dark:border-zinc-800 dark:bg-zinc-950">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-base font-semibold">Toyota (Genuine Motor Oil)</h3>
+            <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Оригинальные масла для бензиновых и гибридных установок Toyota. Рекомендуемые вязкости 0W-16/0W-20/5W-30.</p>
+            <a href="https://t.me/your_telegram" target="_blank" rel="noopener" class="mt-3 inline-flex rounded-xl bg-zinc-900 px-3 py-1.5 text-xs font-semibold text-white hover:bg-zinc-800 dark:bg-white dark:text-zinc-900">Подбор TMO</a>
+          </div>
+          <button class="oil-close rounded-lg p-1 text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-900" aria-label="Закрыть">✕</button>
+        </div>
+      </div>
+
+      <div id="pop-honda-oil" class="oil-popover hidden absolute left-0 right-0 z-20 mx-4 mt-2 rounded-2xl border border-zinc-200 bg-white p-4 shadow-lg dark:border-zinc-800 dark:bg-zinc-950">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-base font-semibold">Honda (HMMF / HSO / Genuine)</h3>
+            <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Оригинальные масла под нормы Honda (включая для гибридов). Подберём точную вязкость и спецификацию.</p>
+            <a href="https://t.me/your_telegram" target="_blank" rel="noopener" class="mt-3 inline-flex rounded-xl bg-zinc-900 px-3 py-1.5 text-xs font-semibold text-white hover:bg-zinc-800 dark:bg-white dark:text-zinc-900">Подбор Honda Genuine</a>
+          </div>
+          <button class="oil-close rounded-lg p-1 text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-900" aria-label="Закрыть">✕</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- ===== Контакты / CTA ===== -->
+<section id="contacts" class="relative border-t border-zinc-200/70 py-12 dark:border-zinc-800 lg:py-16 scroll-mt-20">
+  <!-- лёгкий оранжевый «ореол» как в других секциях -->
+   
+  
+
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="grid items-center gap-8 lg:grid-cols-2">
+      <div>
+        <span class="inline-flex items-center gap-2 rounded-full border border-orange-500/20 bg-orange-500/10 px-3 py-1 text-xs font-semibold tracking-wide text-orange-700 dark:text-orange-300">
+          <span class="relative inline-block size-1.5 rounded-full bg-orange-500/80"></span>
+          Заказать подбор
+        </span>
+
+        <h2 class="mt-4 text-3xl font-extrabold tracking-tight sm:text-4xl">Свяжитесь с нами</h2>
+        <p class="mt-3 max-w-prose text-sm/6 text-zinc-600 dark:text-zinc-300">
+          Работаем ежедневно с <strong>9:00</strong> до <strong>21:00</strong>.<br class="hidden sm:block">
+          Пишите напрямую в Telegram или в мессенджер MAX.
+        </p>
+
+        <div class="mt-5 rounded-2xl border border-zinc-200 bg-white/60 p-4 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950/60 dark:text-zinc-200">
+          Бесплатная доставка по <strong>Щёлковскому району</strong> и городу <strong>Щёлково</strong>.
+        </div>
+
+        
+
+        <!-- Кнопки-как-в-шапке, но крупнее -->
+        <div class="mt-6 flex flex-wrap gap-4">
+          <!-- Telegram -->
+          <a href="https://t.me/Yury_Kush" target="_blank" rel="noopener"
+            class="inline-flex items-center gap-3 rounded-2xl border border-orange-500/20 bg-orange-500/10 px-6 py-3 text-base font-semibold text-orange-700 hover:bg-orange-500/15 active:scale-[.98] dark:text-orange-300 dark:border-orange-400/20 dark:bg-orange-400/10">
+            <!-- paper-plane -->
+            <svg class="size-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M9.036 15.47 8.86 19.2c.308 0 .441-.132.6-.29l1.44-1.385 2.99 2.19c.548.301.94.143 1.091-.506l1.976-9.282c.2-.904-.346-1.258-.916-1.037L4.5 11.09c-.882.343-.869.836-.15 1.058l3.61 1.126 8.377-5.29c.394-.24.753-.107.458.133z"/>
+            </svg>
+            Telegram
+          </a>
+
+          <!-- MAX -->
+          <a href="https://max.ru/u/f9LHodD0cOLy7wEqI7nGzGo-RbPZGVQ-filFrne1ElJ63ltoTDAWqoZP06M" target="_blank" rel="noopener"
+            class="inline-flex items-center gap-3 rounded-2xl border border-orange-500/20 bg-orange-500/10 px-6 py-3 text-base font-semibold text-orange-700 hover:bg-orange-500/15 active:scale-[.98] dark:text-orange-300 dark:border-orange-400/20 dark:bg-orange-400/10">
+            <!-- SVG MAX -->
+            <!-- MAX icon (solid, currentColor) -->
+            <svg class="size-6" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true">
+              <path d="M512 85.3c-235.3 0-426.7 178.4-426.7 397.4 0 112.8 54.1 213.6 138.7 283.6l-17.6 144c-2.7 21.8 18.7 38.1 38.7 28.1l191.2-95.3c23.5 3.2 47.7 4.9 72.1 4.9 235.3 0 426.7-178.4 426.7-397.4S747.3 85.3 512 85.3zM512 640c-106 0-192-71.6-192-160s86-160 192-160 192 71.6 192 160-86 160-192 160z"/>
+            </svg>
+            MAX
+          </a>
+        </div>
+
+
+        
+        <!-- подсказки -->
+        <!--
+        <ul class="mt-5 flex flex-wrap gap-2 text-xs font-medium text-zinc-600 dark:text-zinc-300">
+          <li class="rounded-full border border-zinc-200 px-3 py-1 dark:border-zinc-800">Быстрый ответ</li>
+          <li class="rounded-full border border-zinc-200 px-3 py-1 dark:border-zinc-800">Консультация эксперта</li>
+        </ul>
+        -->
+      </div>
+
+      <!-- Визуальный блок справа -->
+      <div class="relative">
+        <div class="mx-auto w-full max-w-xl overflow-hidden rounded-3xl border border-zinc-200 bg-gradient-to-br from-zinc-100 to-zinc-50 shadow-sm dark:border-zinc-800 dark:from-zinc-900 dark:to-zinc-950">
+          <div class="p-6 sm:p-8">
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-950">
+                <p class="text-sm font-semibold">Подбор для ТО</p>
+                <p class="mt-1 text-xs text-zinc-600 dark:text-zinc-300">Масла, фильтры, колодки и др.</p>
+              </div>
+              <div class="rounded-2xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-950">
+                <p class="text-sm font-semibold">Несколько вариантов</p>
+                <p class="mt-1 text-xs text-zinc-600 dark:text-zinc-300">Оригинал и проверенные аналоги</p>
+              </div>
+              <div class="rounded-2xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-950">
+                <p class="text-sm font-semibold">Быстрый ответ</p>
+                <p class="mt-1 text-xs text-zinc-600 dark:text-zinc-300">Ответим в течение 15-30 минут</p>
+              </div>
+              <div class="rounded-2xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-950">
+                <p class="text-sm font-semibold">Доставка</p>
+                <p class="mt-1 text-xs text-zinc-600 dark:text-zinc-300">Бесплатно доставим по Щёлковскому району</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- мини-плашки как в секции ТО -->
+        <!--
+        <div class="mt-2 flex flex-row gap-4">
+          <div class="pointer-events-none rotate-3 rounded-2xl border border-orange-500/20 bg-orange-500/10 px-3 py-1 text-xs font-semibold text-orange-700 shadow-sm dark:text-orange-300 dark:border-orange-400/20 dark:bg-orange-400/10">
+            Быстрый ответ
+          </div>
+          <div class="pointer-events-none -rotate-3 rounded-2xl border border-orange-500/20 bg-orange-500/10 px-3 py-1 text-xs font-semibold text-orange-700 shadow-sm dark:text-orange-300 dark:border-orange-400/20 dark:bg-orange-400/10">
+            Консультация эксперта
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
+    <!-- svet -->
+    <!-- <div aria-hidden="true" class="pointer-events-none absolute inset-x-0 -top-24 h-56 bg-gradient-to-b from-orange-400/10 to-transparent blur-2xl dark:from-orange-400/15"></div> -->
+  </div>
+</section>
+
+
+
+<!-- ===== FAQ ===== -->
+<section id="faq" class="relative border-t border-zinc-200/70 py-12 dark:border-zinc-800 lg:py-16 scroll-mt-20">
+  <div aria-hidden="true" class="pointer-events-none absolute inset-x-0 -top-4 h-56 bg-gradient-to-b from-orange-400/10 to-transparent blur-2xl dark:from-orange-400/15"></div>
+
+  <div class="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <span class="inline-flex items-center gap-2 rounded-full border border-orange-500/20 bg-orange-500/10 px-3 py-1 text-xs font-semibold tracking-wide text-orange-700 dark:text-orange-300">
+        FAQ
+      </span>
+      <h2 class="mt-4 text-3xl font-extrabold tracking-tight sm:text-4xl">Часто задаваемые вопросы</h2>
+      <p class="mt-3 text-sm text-zinc-600 dark:text-zinc-300">
+        Здесь мы собрали ответы на самые популярные вопросы наших клиентов
+      </p>
+    </div>
+
+    <div class="mt-10 space-y-4">
+      <!-- Вопрос 1 -->
+      <div class="faq-item rounded-2xl border border-zinc-200 bg-white/60 p-4 shadow-sm dark:border-zinc-800 dark:bg-zinc-950/60">
+        <button class="faq-btn flex w-full items-center justify-between text-left text-base font-semibold text-zinc-800 dark:text-zinc-200">
+          Сколько времени занимает подбор деталей?
+          <svg class="faq-icon size-5 shrink-0 text-zinc-500 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="faq-content mt-2 hidden text-sm text-zinc-600 dark:text-zinc-300">
+          Обычно подбор занимает 15–30 минут. Если запрос сложный — до одного дня.
+        </div>
+      </div>
+
+      <!-- Вопрос 2 -->
+      <div class="faq-item rounded-2xl border border-zinc-200 bg-white/60 p-4 shadow-sm dark:border-zinc-800 dark:bg-zinc-950/60">
+        <button class="faq-btn flex w-full items-center justify-between text-left text-base font-semibold text-zinc-800 dark:text-zinc-200">
+          Могу ли я приобрести расходники для Китайского / Европейского / Американского авто?
+          <svg class="faq-icon size-5 shrink-0 text-zinc-500 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="faq-content mt-2 hidden text-sm text-zinc-600 dark:text-zinc-300">
+          Да, вы можете заказать у нас необходимые для ТО расходники. Подбор автозапчастей для них ограничен.
+        </div>
+      </div>
+
+      <!-- Вопрос 3 -->
+      <div class="faq-item rounded-2xl border border-zinc-200 bg-white/60 p-4 shadow-sm dark:border-zinc-800 dark:bg-zinc-950/60">
+        <button class="faq-btn flex w-full items-center justify-between text-left text-base font-semibold text-zinc-800 dark:text-zinc-200">
+          Доставка по Москве / Московской области / Регионам.
+          <svg class="faq-icon size-5 shrink-0 text-zinc-500 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="faq-content mt-2 hidden text-sm text-zinc-600 dark:text-zinc-300">
+          Напиши нам по поводу доставки. Доставка по Москве и Московской области - по тарифам, возможна отправка транспортными компаниями. <br> Бесплатно доставляем только по Щёлковскому району и г. Щёлково.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ===== Footer ===== -->
+  <footer id="contacts" class="border-t border-zinc-200/70 bg-white py-10 dark:border-zinc-800 dark:bg-zinc-950">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-8 md:grid-cols-4">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2">
+            <!-- Logo -->
+            <a href="#" class="inline-flex items-center gap-3">
+              <img src="/src/img/logostdpngfter.png" alt="АВТОСПЕЦ" class="h-24 w-auto object-contain" />
+            </a>
+            
+            <!--
+            <span class="text-lg font-normal tracking-tight ml-1"> — подбор комплектов для ТО.</span>
+            <span class="inline-flex size-8 items-center justify-center rounded-xl bg-zinc-900 text-white dark:bg-white dark:text-zinc-900"><span class="font-black">A</span></span>
+            <span class="text-lg font-extrabold tracking-tight">АВТОСПЕЦ</span>
+            -->
+          </div>
+          <p class="mt-3 max-w-prose text-sm text-zinc-600 dark:text-zinc-300">
+            Подбор комплектов для техобслуживания японских и корейских авто. <br> Масла, фильтры, колодки, свечи и многое другое.
+          </p>
+          <div class="mt-4 flex gap-3">
+            <a href="https://t.me/Yury_Kush" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-xl border border-zinc-200 bg-white px-3 py-2 text-sm font-semibold text-zinc-900 hover:bg-zinc-50 dark:bg-zinc-900 dark:border-zinc-800 dark:text-zinc-100 dark:hover:bg-zinc-800">Telegram</a>
+            <a href="https://max.ru/u/f9LHodD0cOLy7wEqI7nGzGo-RbPZGVQ-filFrne1ElJ63ltoTDAWqoZP06M" class="inline-flex items-center gap-2 rounded-xl border border-zinc-200 bg-white px-3 py-2 text-sm font-semibold text-zinc-900 hover:bg-zinc-50 dark:bg-zinc-900 dark:border-zinc-800 dark:text-zinc-100 dark:hover:bg-zinc-800">MAX</a>
+            <a href="mailto:word01.lie@icloud.com" 
+              class="inline-flex items-center gap-2 rounded-xl border border-zinc-200 bg-white px-3 py-2 text-sm font-semibold text-zinc-900 hover:bg-zinc-50 dark:bg-zinc-900 dark:border-zinc-800 dark:text-zinc-100 dark:hover:bg-zinc-800">
+              Email
+            </a>
+            <a href="https://t.me/chaserjzx1OO" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-xl border border-zinc-200 bg-white px-3 py-2 text-sm font-semibold text-zinc-900 hover:bg-zinc-50 dark:bg-zinc-900 dark:border-zinc-800 dark:text-zinc-100 dark:hover:bg-zinc-800">По вопросам сайта</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-semibold">Мы работаем:</h4>
+          <ul class="mt-3 space-y-2 text-sm text-zinc-600 dark:text-zinc-300">
+            <!--
+            <li><a href="tel:+7XXXXXXXXXX" class="hover:underline">+7 (XXX) XXX-XX-XX</a></li>
+            -->
+            <li><span>Ежедневно: 09:00–21:00</span></li>
+            <li><span>Московская область, г. Щёлково</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-semibold">Навигация</h4>
+          <ul class="mt-3 space-y-2 text-sm text-zinc-600 dark:text-zinc-300">
+            <li><a href="#to" class="hover:underline">Всё для ТО</a></li>
+            <li><a href="#parts" class="hover:underline">Автозапчасти</a></li>
+            <li><a href="#contacts" class="hover:underline">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-col items-center justify-between gap-3 border-t border-zinc-200/70 pt-4 text-xs text-zinc-500 sm:flex-row dark:border-zinc-800">
+        <p>© <span id="y"></span> АВТОСПЕЦ - подбор комплектов для техобслуживания авто.</p>
+        <p>ООО "АЛЬФАРК" ОГРН - 1245000124687</p>
+        <p>Сделано с любовью к японским и корейским авто.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tiny JS for mobile menu + year 
+  <script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+
+  const btn   = document.getElementById('menuBtn');
+  const wrap  = document.getElementById('menuToggle'); // обёртка с data-open
+  const menu  = document.getElementById('mobileMenu');
+
+  btn?.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    const open = !menu.classList.contains('hidden');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    wrap.setAttribute('data-open', open ? 'true' : 'false'); // триггерит анимацию
+  });
+</script>
+-->
+
+<script>
+(() => {
+  // ===== helpers =====
+  const $ = (s, r=document) => r.querySelector(s);
+
+  // ===== year =====
+  const yEl = $('#y');
+  if (yEl) yEl.textContent = new Date().getFullYear();
+
+  // ===== elements =====
+  const headerEl = $('header.sticky') || $('header');
+  const btn  = $('#menuBtn');
+  const wrap = $('#menuToggle');     // для состояния иконки
+  const menu = $('#mobileMenu');     // сам выпадающий контейнер
+  if (!btn || !wrap || !menu || !headerEl) return;
+
+  // Внутренний слой для трансформаций (если есть дочерний контейнер, используем его)
+  const inner = menu.firstElementChild || menu;
+
+  // ===== настройки плавности =====
+  const prefersReduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const DUR_OPEN  = prefersReduced ? 0 : 90;  // ↑ увеличь до 360–420 для «масла»
+  const DUR_CLOSE = prefersReduced ? 0 : 60;  // закрытие чуть быстрее
+  const EASE_OUT  = 'cubic-bezier(.16,1,.3,1)';   // мягкий easeOutQuint
+  const EASE_IN   = 'cubic-bezier(.4,0,.2,1)';    // материалоподобный вход/выход
+
+  let isAnimating = false;
+  let current = null;
+
+  // Синхронизация ARIA / data-open (для анимации иконки)
+  const setState = (open) => {
+    wrap.setAttribute('data-open', open ? 'true' : 'false');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  };
+
+  // Подготовка инлайнов
+  const prepForAnim = (show) => {
+    if (show) {
+      menu.classList.remove('hidden');         // сделать видимым
+      menu.style.overflow = 'hidden';
+      inner.style.transformOrigin = 'top';
+      inner.style.willChange = 'transform, opacity';
+    } else {
+      menu.style.overflow = 'hidden';
+      inner.style.transformOrigin = 'top';
+      inner.style.willChange = 'transform, opacity';
+    }
+  };
+
+  const clearInline = () => {
+    menu.style.overflow = '';
+    inner.style.transformOrigin = '';
+    inner.style.willChange = '';
+    inner.style.transform = '';
+    inner.style.opacity = '';
+  };
+
+  // Открытие — три ключкадра: лёгкое «вылетание», овершут 1.015 → посадка 1.0
+  const openMenu = () => {
+    if (!menu.classList.contains('hidden') || isAnimating) { setState(true); return; }
+    isAnimating = true; setState(true);
+    if (prefersReduced) { menu.classList.remove('hidden'); isAnimating = false; return; }
+
+    prepForAnim(true);
+    current?.cancel();
+    current = inner.animate(
+      [
+        { transform:'scaleY(.94) translateY(-6px)', opacity:0,  offset:0,   easing: EASE_IN  },
+        { transform:'scaleY(1.015) translateY(0)',  opacity:.96, offset:.72, easing: EASE_OUT },
+        { transform:'scaleY(1) translateY(0)',      opacity:1,  offset:1    }
+      ],
+      { duration: DUR_OPEN, fill:'forwards' }
+    );
+    current.onfinish = () => { isAnimating = false; clearInline(); };
+    current.oncancel = () => { isAnimating = false; };
+  };
+
+  // Закрытие — симметрично: лёгкая «антиципация» вверх и мягкое схлопывание
+  const closeMenu = () => {
+    if (menu.classList.contains('hidden') || isAnimating) { setState(false); return; }
+    isAnimating = true; setState(false);
+    if (prefersReduced) { menu.classList.add('hidden'); isAnimating = false; return; }
+
+    prepForAnim(false);
+    current?.cancel();
+    current = inner.animate(
+      [
+        { transform:'scaleY(1) translateY(0)',      opacity:1,   offset:0,   easing: EASE_IN  },
+        { transform:'scaleY(.95) translateY(-4px)', opacity:.15, offset:.86, easing: EASE_OUT },
+        { transform:'scaleY(.93) translateY(-6px)', opacity:0,   offset:1                     }
+      ],
+      { duration: DUR_CLOSE, fill:'forwards' }
+    );
+    current.onfinish = () => { isAnimating = false; menu.classList.add('hidden'); clearInline(); };
+    current.oncancel = () => { isAnimating = false; };
+  };
+
+  const toggleMenu = () => { if (!isAnimating) (menu.classList.contains('hidden') ? openMenu() : closeMenu()); };
+
+  // ===== события =====
+  btn.addEventListener('click', (e) => { e.preventDefault(); toggleMenu(); });
+
+  // закрыть по клику на пункт
+  menu.addEventListener('click', (e) => { if (e.target.closest('a[href]')) closeMenu(); });
+
+  // ESC
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
+
+  // начальная синхронизация (если меню уже не hidden — считаем открытым)
+  setState(!menu.classList.contains('hidden'));
+
+
+
+  
+  // ===== якоря с учётом высоты шапки =====
+  const anchors = document.querySelectorAll('a[href^="#"]');
+  if (anchors.length) {
+    anchors.forEach(a => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href').slice(1);
+        if (!id) return;
+        const target = document.getElementById(id);
+        if (!target) return;
+
+        e.preventDefault();
+        closeMenu();
+
+        const headerH = headerEl.offsetHeight || 0;
+        const fudge   = -3; // <- добавь 2–4px
+        const y = target.getBoundingClientRect().top + window.scrollY - headerH - fudge;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+
+        if (history.pushState) history.pushState(null, '', location.pathname + location.search);
+        else location.hash = '';
+      });
+    });
+  }
+})();
+</script>
+
+
+<!-- 
+// ===== якоря с учётом высоты шапки =====
+  const anchors = document.querySelectorAll('a[href^="#"]');
+  if (anchors.length) {
+    anchors.forEach(a => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href').slice(1);
+        if (!id) return;
+        const target = document.getElementById(id);
+        if (!target) return;
+
+        e.preventDefault();
+        closeMenu();
+
+        const headerH = headerEl.offsetHeight || 0;
+        const y = target.getBoundingClientRect().top + window.scrollY - headerH;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+
+        if (history.pushState) history.pushState(null, '', location.pathname + location.search);
+        else location.hash = '';
+      });
+    });
+  } -->
+
+
+<script>
+  // --- Поповеры для масла с активным состоянием чипа
+  const oilRail = document.getElementById('oilRail');
+  const oilPopovers = Array.from(document.querySelectorAll('.oil-popover'));
+  const oilChips = Array.from(document.querySelectorAll('.oil-chip'));
+
+  function oilHideAll() {
+    oilPopovers.forEach(p => p.classList.add('hidden'));
+    oilChips.forEach(c => {
+      c.dataset.active = "false";
+      c.setAttribute('aria-selected', 'false');
+    });
+  }
+
+  // открыть поповер по клику на бренд и активировать чип
+  oilRail?.addEventListener('click', (e) => {
+    const chip = e.target.closest('.oil-chip');
+    if (!chip) return;
+    const sel = chip.getAttribute('data-popover');
+    const pop = sel ? document.querySelector(sel) : null;
+    if (!pop) return;
+
+    const isOpen = !pop.classList.contains('hidden');
+    oilHideAll();
+    if (!isOpen) {
+      pop.classList.remove('hidden');
+      chip.dataset.active = "true";          // держит "hover" пока открыт
+      chip.setAttribute('aria-selected', 'true');
+    }
+  });
+
+  // закрытие (крестик, клик вне, ESC) — снимаем актив
+  document.querySelectorAll('.oil-close').forEach(b => {
+    b.addEventListener('click', oilHideAll);
+  });
+  document.addEventListener('click', (e) => {
+    const inPopover = e.target.closest('.oil-popover');
+    const inChip = e.target.closest('.oil-chip');
+    if (!inPopover && !inChip) oilHideAll();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') oilHideAll();
+  });
+</script>
+
+
+
+
+<script>
+(() => {
+  const section = document.getElementById('promo');
+  const viewport = document.getElementById('promoViewport');
+  const track    = document.getElementById('promoTrack');
+  const slides   = Array.from(track?.children || []);
+  const dotsWrap = document.getElementById('promoDots');
+  const btnPrev  = viewport?.querySelector('[data-dir="prev"]');
+  const btnNext  = viewport?.querySelector('[data-dir="next"]');
+  if (!section || !viewport || !track || slides.length === 0 || !dotsWrap) return;
+
+  // === Высота с учётом шапки ===
+  const header = document.querySelector('header.sticky') || document.querySelector('header');
+  const applyOffset = () => {
+    const h = header ? header.offsetHeight : 80;
+    section.style.setProperty('--hero-offset', h + 'px');
+  };
+  applyOffset();
+  addEventListener('resize', applyOffset);
+
+  // === Служебные ===
+  let index = 0;
+  const getWidth = () => viewport.clientWidth;
+
+  const setTransform = (x) => {
+    track.style.transform = `translate3d(${x}px,0,0)`;
+  };
+  const snap = (i, {animate = true} = {}) => {
+    index = Math.max(0, Math.min(i, slides.length - 1));
+    track.classList.toggle('duration-500', animate);  // синхронно с классом в HTML
+    setTransform(-index * getWidth());
+    updateDots();
+  };
+
+  // === Точки ===
+  const dots = slides.map((_, i) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'h-2.5 w-2.5 rounded-full bg-white/70 outline outline-1 outline-white/40 aria-[current=true]:w-6 aria-[current=true]:bg-white aria-[current=true]:shadow aria-[current=true]:outline-2 transition-all';
+    b.setAttribute('aria-label', `Перейти к слайду ${i+1}`);
+    b.addEventListener('click', () => { snap(i); restartAutoplay(); });
+    dotsWrap.appendChild(b);
+    return b;
+  });
+  const updateDots = () => {
+    dots.forEach((d, i) => d.setAttribute('aria-current', i === index ? 'true' : 'false'));
+  };
+
+  // === Кнопки ===
+  btnPrev?.addEventListener('click', () => { snap(index - 1); restartAutoplay(); });
+  btnNext?.addEventListener('click', () => { snap(index + 1); restartAutoplay(); });
+
+  // === Свайп / перетаскивание ===
+  let dragging = false, startX = 0, startTx = 0, dx = 0, lockScroll = false;
+  const THRESH = 48; // px
+
+  const onDown = (e) => {
+    dragging = true;
+    stopAutoplay();
+    track.classList.remove('duration-500');
+    startX = (e.touches ? e.touches[0].clientX : e.clientX);
+    startTx = -index * getWidth();
+    dx = 0; lockScroll = false;
+  };
+  const onMove = (e) => {
+    if (!dragging) return;
+    const x = (e.touches ? e.touches[0].clientX : e.clientX);
+    dx = x - startX;
+
+    if (!lockScroll && Math.abs(dx) > 8) {
+      lockScroll = true;
+      e.preventDefault?.();
+    }
+    const atEdge = (index === 0 && dx > 0) || (index === slides.length - 1 && dx < 0);
+    const dragX = atEdge ? startTx + dx * 0.35 : startTx + dx;
+    setTransform(dragX);
+  };
+  const onUp = () => {
+    if (!dragging) return;
+    dragging = false;
+
+    if (Math.abs(dx) > THRESH) {
+      snap(index + (dx < 0 ? 1 : -1));
+    } else {
+      snap(index); // вернуть на место
+    }
+    startAutoplay();
+  };
+
+  // Pointer + touch
+  track.addEventListener('pointerdown', onDown);
+  track.addEventListener('pointermove', onMove);
+  addEventListener('pointerup', onUp);
+  track.addEventListener('touchstart', onDown, {passive: true});
+  track.addEventListener('touchmove', onMove, {passive: false});
+  track.addEventListener('touchend', onUp);
+
+  // === Автоплей (Вариант 2: динамический интервал) ===
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const AUTO_ENABLED = section.dataset.autoplay !== 'false';
+  const getInterval  = () => Number(section.dataset.interval || 4500);
+  let autoTimer = null;
+
+  const startAutoplay = () => {
+    if (!AUTO_ENABLED || prefersReduced || slides.length < 2) return;
+    stopAutoplay();
+    autoTimer = setInterval(() => {
+      if (dragging || document.hidden) return;
+      const next = (index + 1) % slides.length;
+      snap(next);
+    }, Math.max(1500, getInterval()));
+  };
+  const stopAutoplay = () => {
+    if (autoTimer) {
+      clearInterval(autoTimer);
+      autoTimer = null;
+    }
+  };
+  const restartAutoplay = () => {
+    stopAutoplay();
+    startAutoplay();
+  };
+
+  // Пауза при скрытой вкладке
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stopAutoplay();
+    else startAutoplay();
+  });
+
+  // === Реакция на ресайз ===
+  addEventListener('resize', () => {
+    snap(index, {animate:false});
+    restartAutoplay();
+  });
+
+  // Старт
+  snap(0, {animate:false});
+  startAutoplay();
+})();
+</script>
+
+
+<script>
+(() => {
+  const promo  = document.getElementById('promo');
+  const bar    = document.getElementById('preHeroBar');
+  const header = document.querySelector('header.sticky') || document.querySelector('header');
+
+  const setHeroOffset = () => {
+    const headerH = header ? header.offsetHeight : 0;
+    const barH    = bar ? bar.getBoundingClientRect().height : 0;
+    if (promo) promo.style.setProperty('--hero-offset', (headerH + barH) + 'px');
+  };
+
+  setHeroOffset();
+  addEventListener('resize', setHeroOffset);
+})();
+</script>
+
+
+
+
+<script>
+  (() => {
+    const sect = document.getElementById('contacts');
+    if (!sect) return;
+    const p = sect.querySelector('p.mt-3');
+    if (!p) return;
+
+    const now = new Date();
+    const h = now.getHours();
+    const open = h >= 9 && h < 21;
+    const badge = document.createElement('span');
+    badge.className = open
+      ? 'ml-2 inline-flex items-center rounded-full bg-green-500/10 px-2 py-0.5 text-[11px] font-semibold text-green-700 dark:text-green-300'
+      : 'ml-2 inline-flex items-center rounded-full bg-zinc-500/10 px-2 py-0.5 text-[11px] font-semibold text-zinc-700 dark:text-zinc-300';
+    badge.textContent = open ? 'Сейчас открыто' : 'Сейчас закрыто';
+    p.appendChild(badge);
+  })();
+</script>
+
+
+<script>
+  document.querySelectorAll('.faq-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const content = item.querySelector('.faq-content');
+      const icon = btn.querySelector('.faq-icon');
+
+      // сворачивание/разворачивание
+      content.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+    });
+  });
+</script>
+
+
+
+
+
+
+
+
+<!-- Patch: клик по любой карточке в десктоп-стопке открывает нужную фотку -->
+<script>
+(() => {
+  const track = document.getElementById('vinylTrack');
+  const mqDesktop = matchMedia('(min-width: 768px)');
+  if (!track) return;
+
+  // Вспомогательное: выбрать карточку под курсором с самым высоким z-index
+  function pickCardUnderPoint(x, y) {
+    const cards = Array.from(track.querySelectorAll(':scope > .vinyl-card')); // только оригиналы
+    let best = null, bestZ = -Infinity;
+    for (const li of cards) {
+      const r = li.getBoundingClientRect();
+      if (x >= r.left && x <= r.right && y >= r.top && y <= r.bottom) {
+        const z = parseInt(li.style.zIndex || 0, 10);
+        if (z > bestZ) { bestZ = z; best = li; }
+      }
+    }
+    return best;
+  }
+
+  // Ловим клик в фазе capture, чтобы не зависеть от pointer-events карточек
+  const onCaptureClick = (e) => {
+    if (!mqDesktop.matches) return;                // только десктоп
+    if (e.defaultPrevented) return;                // уже обработали где-то ещё
+    // Не реагируем на клики по стрелкам/точкам и т.д.
+    if (e.target.closest('#vinylPrev, #vinylNext, #vinylDots, [data-full]')) return;
+
+    const card = pickCardUnderPoint(e.clientX, e.clientY);
+    if (!card) return;
+
+    const trigger = card.querySelector('[data-full]');
+    if (!trigger) return;
+
+    // Открываем через штатный обработчик галереи
+    e.preventDefault();
+    e.stopPropagation();
+    trigger.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, view: window }));
+  };
+
+  // Навешиваем на track (capture = true)
+  track.addEventListener('click', onCaptureClick, true);
+})();
+</script>
+
+
+
+
+
+
+
+<!-- до отката-->
+
+
+
+
+</body>
+</html>
