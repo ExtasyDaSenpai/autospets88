@@ -1,0 +1,21 @@
+# robots.txt for https://autospets88.ru
+# Generated on 2025-09-12
+
+User-agent: *
+Allow: /
+
+# Optional: keep system/build folders out of the index if they exist
+Disallow: /src/
+Disallow: /assets/
+Disallow: /build/
+Disallow: /dist/
+Disallow: /node_modules/
+
+# UTM/analytics params don't need separate pages in Yandex
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content /
+
+# Sitemap location
+Sitemap: https://autospets88.ru/sitemap.xml
+
+# Non-standard but useful for Yandex
+Host: autospets88.ru
