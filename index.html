@@ -29,12 +29,12 @@
 
 
 
-  <link rel="icon" type="image/png" href="/src/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/src/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="/src/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/src/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="АВТОСПЕЦ" />
-  <link rel="manifest" href="/src/favicon/site.webmanifest" />
+  <link rel="manifest" href="site.webmanifest" />
 
 
 </head>
@@ -45,12 +45,12 @@
     <div class="flex h-20 items-center justify-between">
       <!-- Logo -->
       <a href="#" class="inline-flex items-center gap-3">
-        <img src="/src/img/logostdpngfter.png" alt="АВТОСПЕЦ" class="h-28 w-auto object-contain" />
+        <img src="./img/logostdpngfter.png" alt="АВТОСПЕЦ" class="h-28 w-auto object-contain" />
       </a>
 
       <!-- Desktop nav -->
       <nav class="hidden items-center gap-8 lg:flex">
-        <a href="#to" class="text-base font-medium text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-white">ТО и расходники</a>
+        <a href="#catalog" class="text-base font-medium text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-white">ТО и расходники</a>
         <a href="#parts" class="text-base font-medium text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-white">Автозапчасти</a>
         <a href="#contacts" class="text-base font-medium text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-white">Контакты</a>
       </nav>
@@ -112,7 +112,7 @@
   <nav id="mobileMenu" class="lg:hidden hidden border-t border-zinc-200/70 bg-white dark:bg-zinc-950 dark:border-zinc-800">
     <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6">
       <!-- одинаковые hover/тени у всех -->
-      <a href="#to" class="block rounded-lg px-2 py-2 text-base font-medium text-zinc-700 hover:bg-zinc-100 hover:shadow-sm dark:text-zinc-300 dark:hover:bg-zinc-900">ТО и расходники</a>
+      <a href="#catalog" class="block rounded-lg px-2 py-2 text-base font-medium text-zinc-700 hover:bg-zinc-100 hover:shadow-sm dark:text-zinc-300 dark:hover:bg-zinc-900">ТО и расходники</a>
       <a href="#parts" class="block rounded-lg px-2 py-2 text-base font-medium text-zinc-700 hover:bg-zinc-100 hover:shadow-sm dark:text-zinc-300 dark:hover:bg-zinc-900">Автозапчасти</a>
       <a href="#contacts" class="block rounded-lg px-2 py-2 text-base font-medium text-zinc-700 hover:bg-zinc-100 hover:shadow-sm dark:text-zinc-300 dark:hover:bg-zinc-900">Контакты</a>
       <div class="mt-3 flex gap-2">
@@ -162,7 +162,7 @@
       
       <!-- Slide 1 -->
       <figure class="relative w-full shrink-0">
-        <img src="/src/img/main-theme.jpg" alt="АВТОСПЕЦ"
+        <img src="./img/main-theme.jpg" alt="АВТОСПЕЦ"
              class="absolute inset-0 h-full w-full object-cover" loading="eager" />
         <!-- Фикс затемнения: bg-black + opacity через CSS-переменную -->
         <div class="absolute inset-0 bg-black" style="opacity: var(--hero-dim, .75);"></div>
@@ -176,7 +176,7 @@
 
       <!-- Slide 2 -->
       <figure class="relative w-full shrink-0">
-        <img src="/src/img/second-theme.jpg" alt="АВТОСПЕЦ"
+        <img src="./img/second-theme.jpg" alt="АВТОСПЕЦ"
              class="absolute inset-0 h-full w-full object-cover" loading="lazy" />
         <div class="absolute inset-0 bg-black" style="opacity: var(--hero-dim, .75);"></div>
         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
@@ -189,7 +189,7 @@
 
       <!-- Slide 3 -->
       <figure class="relative w-full shrink-0">
-        <img src="/src/img/third-theme.jpg" alt="АВТОСПЕЦ"
+        <img src="./img/third-theme.jpg" alt="АВТОСПЕЦ"
              class="absolute inset-0 h-full w-full object-cover" loading="lazy" />
         <div class="absolute inset-0 bg-black" style="opacity: var(--hero-dim, .75);"></div>
         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
@@ -202,7 +202,7 @@
 
       <!-- Slide 4 -->
       <figure class="relative w-full shrink-0">
-        <img src="/src/img/hero-theme.jpg" alt="АВТОСПЕЦ"
+        <img src="./img/hero-theme.jpg" alt="АВТОСПЕЦ"
              class="absolute inset-0 h-full w-full object-cover" loading="lazy" />
         <div class="absolute inset-0 bg-black" style="opacity: var(--hero-dim, .75);"></div>
         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
@@ -298,7 +298,7 @@
         <figure class="mt-2 rounded-xl border border-zinc-200/70 dark:border-zinc-800">
           <div class="relative aspect-[3/2] w-full overflow-hidden rounded-[calc(theme(borderRadius.xl)-2px)] bg-zinc-50 dark:bg-zinc-900">
             <img
-              src="/src/img/pictures/oil.png"
+              src="./img/pictures/oil.png"
               alt="Масла"
               class="absolute inset-0 block h-full w-full object-contain"
               width="600" height="400" loading="lazy" decoding="async" />
@@ -312,7 +312,7 @@
         <figure class="mt-2 rounded-xl border border-zinc-200/70 dark:border-zinc-800">
           <div class="relative aspect-[3/2] w-full overflow-hidden rounded-[calc(theme(borderRadius.xl)-2px)] bg-zinc-50 dark:bg-zinc-900">
             <img
-              src="/src/img/pictures/2filters.png"
+              src="./img/pictures/2filters.png"
               alt="Фильтры"
               class="absolute inset-0 block h-full w-full object-contain"
               width="600" height="400" loading="lazy" decoding="async" />
@@ -326,7 +326,7 @@
         <figure class="mt-2 rounded-xl border border-zinc-200/70 dark:border-zinc-800">
           <div class="relative aspect-[3/2] w-full overflow-hidden rounded-[calc(theme(borderRadius.xl)-2px)] bg-zinc-50 dark:bg-zinc-900">
             <img
-              src="/src/img/pictures/brakes.jpg"
+              src="./img/pictures/brakes.jpg"
               alt="Тормозные элементы"
               class="absolute inset-0 block h-full w-full object-contain"
               width="600" height="400" loading="lazy" decoding="async" />
@@ -340,7 +340,7 @@
         <figure class="mt-2 rounded-xl border border-zinc-200/70 dark:border-zinc-800">
           <div class="relative aspect-[3/2] w-full overflow-hidden rounded-[calc(theme(borderRadius.xl)-2px)] bg-zinc-50 dark:bg-zinc-900">
             <img
-              src="/src/img/pictures/red_liquid.png"
+              src="./img/pictures/red_liquid.png"
               alt="Тормозные элементы"
               class="absolute inset-0 block h-full w-full object-contain"
               width="600" height="400" loading="lazy" decoding="async" />
@@ -370,6 +370,166 @@
         </div>
       </div>
     </section>
+
+
+
+
+    <!-- ===== Каталог базовых позиций ===== -->
+    <section id="catalog" class="relative border-t border-zinc-200/70 py-10 dark:border-zinc-800 lg:py-16 scroll-mt-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <span class="inline-flex items-center gap-2 rounded-full border border-orange-500/20 bg-orange-500/10 px-3 py-1 text-xs font-semibold tracking-wide text-orange-700 dark:text-orange-300">
+          <span class="relative inline-block size-1.5 rounded-full bg-orange-500/80"></span>
+          Быстрый заказ по категориям
+        </span>
+
+        <div class="mt-4 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h2 class="text-2xl font-extrabold tracking-tight sm:text-3xl">
+              Каталог базовых позиций
+            </h2>
+            <p class="mt-2 max-w-prose text-sm/6 text-zinc-600 dark:text-zinc-300">
+              Выберите, что вам нужно: масла, фильтры, тормозные элементы или технические жидкости и антифриз. 
+              Нажмите «Заказать» и напишите нам в Telegram.
+            </p>
+          </div>
+          <p class="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
+            Цены ориентировочные, зависят от модели авто и бренда.
+          </p>
+        </div>
+
+        <!-- Сетка категорий -->
+        <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Масла -->
+          <label class="group relative flex cursor-pointer gap-3 rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm transition hover:border-orange-400 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950">
+            <input type="checkbox" name="catalogCategory" value="Масла" class="peer sr-only">
+            <div class="mt-1 h-4 w-4 shrink-0 rounded-full border border-zinc-300 bg-white ring-offset-2 transition peer-checked:border-orange-500 peer-checked:bg-orange-500 peer-checked:ring-2 peer-checked:ring-orange-500/40 dark:border-zinc-600 dark:bg-zinc-900"></div>
+            <div class="flex flex-1 flex-col gap-1">
+              <div class="flex items-center justify-between gap-2">
+                <p class="text-sm font-semibold">Масла</p>
+                <span class="rounded-full bg-orange-500/10 px-2 py-0.5 text-[11px] font-semibold text-orange-700 dark:text-orange-300">
+                  от 1 500 ₽
+                </span>
+              </div>
+              <p class="text-xs text-zinc-600 dark:text-zinc-300">
+                Моторные, трансмиссионные, для вариаторов и гибридных установок.
+              </p>
+            </div>
+          </label>
+
+          <!-- Фильтры -->
+          <label class="group relative flex cursor-pointer gap-3 rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm transition hover:border-orange-400 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950">
+            <input type="checkbox" name="catalogCategory" value="Фильтры" class="peer sr-only">
+            <div class="mt-1 h-4 w-4 shrink-0 rounded-full border border-zinc-300 bg-white ring-offset-2 transition peer-checked:border-orange-500 peer-checked:bg-orange-500 peer-checked:ring-2 peer-checked:ring-orange-500/40 dark:border-zinc-600 dark:bg-zinc-900"></div>
+            <div class="flex flex-1 flex-col gap-1">
+              <div class="flex items-center justify-between gap-2">
+                <p class="text-sm font-semibold">Фильтры</p>
+                <span class="rounded-full bg-orange-500/10 px-2 py-0.5 text-[11px] font-semibold text-orange-700 dark:text-orange-300">
+                  от 300 ₽
+                </span>
+              </div>
+              <p class="text-xs text-zinc-600 dark:text-zinc-300">
+                Масляные, воздушные, салонные, топливные под ваш автомобиль.
+              </p>
+            </div>
+          </label>
+
+          <!-- Тормозные элементы -->
+          <label class="group relative flex cursor-pointer gap-3 rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm transition hover:border-orange-400 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950">
+            <input type="checkbox" name="catalogCategory" value="Тормозные элементы" class="peer sr-only">
+            <div class="mt-1 h-4 w-4 shrink-0 rounded-full border border-zinc-300 bg-white ring-offset-2 transition peer-checked:border-orange-500 peer-checked:bg-orange-500 peer-checked:ring-2 peer-checked:ring-orange-500/40 dark:border-zinc-600 dark:bg-zinc-900"></div>
+            <div class="flex flex-1 flex-col gap-1">
+              <div class="flex items-center justify-between gap-2">
+                <p class="text-sm font-semibold">Тормозные элементы</p>
+                <span class="rounded-full bg-orange-500/10 px-2 py-0.5 text-[11px] font-semibold text-orange-700 dark:text-orange-300">
+                  от 2 500 ₽
+                </span>
+              </div>
+              <p class="text-xs text-zinc-600 dark:text-zinc-300">
+                Колодки, диски и расходники для надёжного торможения.
+              </p>
+            </div>
+          </label>
+
+          <!-- Технические жидкости -->
+          <label class="group relative flex cursor-pointer gap-3 rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm transition hover:border-orange-400 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950">
+            <input type="checkbox" name="catalogCategory" value="Технические жидкости" class="peer sr-only">
+            <div class="mt-1 h-4 w-4 shrink-0 rounded-full border border-zinc-300 bg-white ring-offset-2 transition peer-checked:border-orange-500 peer-checked:bg-orange-500 peer-checked:ring-2 peer-checked:ring-orange-500/40 dark:border-zinc-600 dark:bg-zinc-900"></div>
+            <div class="flex flex-1 flex-col gap-1">
+              <div class="flex items-center justify-between gap-2">
+                <p class="text-sm font-semibold">Технические жидкости</p>
+                <span class="rounded-full bg-orange-500/10 px-2 py-0.5 text-[11px] font-semibold text-orange-700 dark:text-orange-300">
+                  от 500 ₽
+                </span>
+              </div>
+              <p class="text-xs text-zinc-600 dark:text-zinc-300">
+                Тормозные жидкости, жидкости ГУР, для АКПП и вариаторов.
+              </p>
+            </div>
+          </label>
+
+          <!-- Антифризы -->
+          <label class="group relative flex cursor-pointer gap-3 rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm transition hover:border-orange-400 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950">
+            <input type="checkbox" name="catalogCategory" value="Антифриз" class="peer sr-only">
+            <div class="mt-1 h-4 w-4 shrink-0 rounded-full border border-zinc-300 bg-white ring-offset-2 transition peer-checked:border-orange-500 peer-checked:bg-orange-500 peer-checked:ring-2 peer-checked:ring-orange-500/40 dark:border-zinc-600 dark:bg-zinc-900"></div>
+            <div class="flex flex-1 flex-col gap-1">
+              <div class="flex items-center justify-between gap-2">
+                <p class="text-sm font-semibold">Антифриз</p>
+                <span class="rounded-full bg-orange-500/10 px-2 py-0.5 text-[11px] font-semibold text-orange-700 dark:text-orange-300">
+                  от 500 ₽
+                </span>
+              </div>
+              <p class="text-xs text-zinc-600 dark:text-zinc-300">
+                Оригинальные и совместимые составы под ваш двигатель и климат.
+              </p>
+            </div>
+          </label>
+        </div>
+
+        <!-- Оферта + кнопка заказа -->
+        <div class="mt-6 space-y-4 rounded-2xl border border-zinc-200 bg-white/70 p-4 text-sm shadow-sm dark:border-zinc-800 dark:bg-zinc-950/70">
+          <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <p class="text-xs text-zinc-600 dark:text-zinc-300">
+              Вы выбрали: <span id="catalogChoiceLabel" class="font-semibold text-zinc-900 dark:text-zinc-50">ничего не выбрано</span>
+            </p>
+            <p class="text-[11px] text-zinc-500 dark:text-zinc-400">
+              После отправки заказа мы уточним VIN/кузов, пробег и подберём точные позиции.
+            </p>
+          </div>
+
+          <label class="flex items-start gap-2 text-xs text-zinc-600 dark:text-zinc-300">
+            <input id="catalogOffer" type="checkbox" class="mt-0.5 size-4 shrink-0 rounded border-zinc-300 text-orange-600 focus:ring-orange-500 dark:border-zinc-600">
+            <span>
+              Я ознакомлен(а) и принимаю условия 
+              <a href="./pdf/dogovor_OOO_ALFARK.pdf" class="font-semibold underline underline-offset-2 hover:text-orange-700 dark:hover:text-orange-300" target="_blank" rel="noopener">
+                договора-оферты
+              </a>.
+              Галочка обязательна для оформления заказа.
+            </span>
+          </label>
+
+          <button
+            id="catalogOrderBtn"
+            type="button"
+            class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-zinc-900 px-4 py-2.5 text-sm font-semibold text-white shadow-sm opacity-50 transition disabled:cursor-not-allowed hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100"
+            disabled
+            data-tg="https://t.me/Yury_Kush">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                 aria-hidden="true" class="size-5" fill="currentColor">
+              <path d="M9.036 15.47 8.86 19.2c.308 0 .441-.132.6-.29l1.44-1.385 2.99 2.19c.548.301.94.143 1.091-.506l1.976-9.282c.2-.904-.346-1.258-.916-1.037L4.5 11.09c-.882.343-.869.836-.15 1.058l3.61 1.126 8.377-5.29c.394-.24.753-.107.458.133z"/>
+            </svg>
+            Заказать в Telegram
+          </button>
+
+          <p class="text-[11px] text-zinc-500 dark:text-zinc-400">
+            Кнопка станет активной после выбора категории и подтверждения договора-оферты.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+
 
     <!-- ===== Автозапчасти на заказ ===== -->
     <section id="parts" class="relative border-t border-zinc-200/70 py-10 dark:border-zinc-800 lg:py-16 scroll-mt-20">
@@ -899,7 +1059,7 @@
           <div class="flex items-center gap-2">
             <!-- Logo -->
             <a href="#" class="inline-flex items-center gap-3">
-              <img src="/src/img/logostdpngfter.png" alt="АВТОСПЕЦ" class="h-24 w-auto object-contain" />
+              <img src="./img/logostdpngfter.png" alt="АВТОСПЕЦ" class="h-24 w-auto object-contain" />
             </a>
             
             <!--
@@ -1427,6 +1587,59 @@
 
   // Навешиваем на track (capture = true)
   track.addEventListener('click', onCaptureClick, true);
+})();
+</script>
+
+
+
+
+
+
+
+
+<script>
+(() => {
+  const checkboxes = Array.from(document.querySelectorAll('input[name="catalogCategory"]'));
+  const offerCheckbox = document.getElementById('catalogOffer');
+  const orderBtn = document.getElementById('catalogOrderBtn');
+  const choiceLabel = document.getElementById('catalogChoiceLabel');
+
+  if (!checkboxes.length || !offerCheckbox || !orderBtn || !choiceLabel) return;
+
+  const updateState = () => {
+    const selected = checkboxes.filter(c => c.checked);
+
+    if (selected.length > 0) {
+      const names = selected.map(c => c.value);
+      // выводим выбранные категории через запятую
+      choiceLabel.textContent = names.join(', ');
+    } else {
+      choiceLabel.textContent = 'ничего не выбрано';
+    }
+
+    const canOrder = selected.length > 0 && offerCheckbox.checked;
+    orderBtn.disabled = !canOrder;
+    orderBtn.classList.toggle('opacity-50', !canOrder);
+    orderBtn.classList.toggle('cursor-not-allowed', !canOrder);
+  };
+
+  checkboxes.forEach(cb => {
+    cb.addEventListener('change', updateState);
+  });
+  offerCheckbox.addEventListener('change', updateState);
+
+  orderBtn.addEventListener('click', () => {
+    const selected = checkboxes.filter(c => c.checked);
+    if (!selected.length || !offerCheckbox.checked) return;
+
+    const tg = orderBtn.dataset.tg || 'https://t.me/Yury_Kush';
+
+    // Открываем Telegram с контактами
+    window.open(tg, '_blank');
+  });
+
+  // Стартовое состояние
+  updateState();
 })();
 </script>
 
